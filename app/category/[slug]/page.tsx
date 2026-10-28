@@ -1,0 +1,2 @@
+import { getProducts,categories } from '@/lib/products'; import { CategoryClient } from '@/components/category-client';
+export default async function CategoryPage({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const all=await getProducts();const category=categories.find(c=>c.slug===slug);const products=all.filter(p=>p.category===slug||p.category.toLowerCase()===slug.toLowerCase()||(category&&p.categoryName===category.name));return <CategoryClient slug={slug} category={category} initialProducts={products}/>}
