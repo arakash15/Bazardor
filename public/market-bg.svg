@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-label="Bazardor market background">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#edf9ee"/>
+      <stop offset="100%" stop-color="#dfeee1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="420" fill="url(#bg)"/>
+  <g opacity="0.9">
+    <circle cx="180" cy="110" r="58" fill="#dff6e4"/>
+    <circle cx="356" cy="230" r="72" fill="#e8f7ea"/>
+    <circle cx="834" cy="110" r="62" fill="#d7f0dd"/>
+    <circle cx="1016" cy="238" r="76" fill="#eaf8ed"/>
+  </g>
+  <g fill="#1a9a56" opacity="0.9">
+    <path d="M130 270c8-29 27-52 52-65 28-15 64-15 94 1 27 15 43 42 49 73H130z"/>
+    <path d="M520 280c8-20 24-38 47-49 26-12 59-11 86 2 24 12 40 35 46 61H520z"/>
+    <path d="M820 290c6-22 22-41 43-53 26-15 62-15 89 0 27 16 44 39 49 70H820z"/>
+  </g>
+</svg>

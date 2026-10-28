@@ -117,6 +117,19 @@ Before opening the site publicly, confirm that the following are in place:
 - The app is tested on a browser at `http://localhost:3000` before deployment.
 - A production-ready database is configured if you plan to support real sign-ups in the cloud.
 
+## Local demo flow
+
+For a quick local launch, use these steps in order:
+
+```bash
+npm install
+Copy-Item .env.example .env
+npx prisma db push
+npm run dev
+```
+
+This keeps the project ready for a clean demonstration without exposing credentials in source control.
+
 ## Notes
 
 - Market prices are estimates/sample values when the API does not supply market-level data; verify prices locally before making a purchase.
