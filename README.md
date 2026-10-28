@@ -106,7 +106,7 @@ git remote add origin https://github.com/<your-user>/<your-repo>.git
 git push -u origin main
 ```
 
-If you are working on a private repository, confirm that your GitHub credentials are configured in the local environment before the first push.
+If you are working on a private repository, confirm that your GitHub credentials are configured in the local environment before the first push. For local testing, a strong `BETTER_AUTH_SECRET` and a valid SQLite file are enough to explore the app. For production deployment, replace the SQLite database with a durable PostgreSQL setup and add OAuth credentials before exposing the site to public traffic.
 
 ## Notes
 
