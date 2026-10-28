@@ -86,6 +86,27 @@ Make commits as each feature is completed; do not create empty or misleading com
 7. `feat: configure Better Auth email and social login`
 8. `feat: add profile update and toast notifications`
 9. `docs: write setup and deployment instructions`
+10. `feat: add loading and error states for smoother UX`
+11. `fix: refine homepage callouts and product discovery`
+12. `docs: publish project notes for GitHub and local setup`
+13. `chore: tighten environment defaults for local development`
+14. `fix: improve resilience around API data and auth flows`
+15. `chore: finalize project polish before GitHub publish`
+
+## Publishing to GitHub
+
+After the project is ready locally, initialize a repository and publish it with the standard flow:
+
+```bash
+git init
+git branch -M main
+git add .
+git commit -m "chore: initialize Bazardor project"
+git remote add origin https://github.com/<your-user>/<your-repo>.git
+git push -u origin main
+```
+
+If you are working on a private repository, confirm that your GitHub credentials are configured in the local environment before the first push.
 
 ## Notes
 
