@@ -108,6 +108,15 @@ git push -u origin main
 
 If you are working on a private repository, confirm that your GitHub credentials are configured in the local environment before the first push. For local testing, a strong `BETTER_AUTH_SECRET` and a valid SQLite file are enough to explore the app. For production deployment, replace the SQLite database with a durable PostgreSQL setup and add OAuth credentials before exposing the site to public traffic.
 
+## Demo checklist
+
+Before opening the site publicly, confirm that the following are in place:
+
+- `.env` contains a strong `BETTER_AUTH_SECRET` and any required OAuth client IDs.
+- `npx prisma db push` has been run successfully in your local environment.
+- The app is tested on a browser at `http://localhost:3000` before deployment.
+- A production-ready database is configured if you plan to support real sign-ups in the cloud.
+
 ## Notes
 
 - Market prices are estimates/sample values when the API does not supply market-level data; verify prices locally before making a purchase.
