@@ -1,0 +1,34 @@
+export type Product = { id: string; slug: string; name: string; category: string; categoryName: string; unit: string; price: number; change: number; emoji: string; description: string; markets: { name: string; price: number; area: string }[] };
+export const fallbackProducts: Product[] = [
+ {id:'1',slug:'miniket-chal',name:'মিনিকেট চাল',category:'chal',categoryName:'চাল',unit:'প্রতি কেজি',price:78,change:2.1,emoji:'🍚',description:'বাছাইকৃত মিনিকেট চালের আজকের বাজারদর ও বিভিন্ন বাজারের তুলনা।',markets:[{name:'সাতক্ষীরা বড় বাজার',price:78,area:'সাতক্ষীরা'},{name:'শ্যামনগর বাজার',price:82,area:'শ্যামনগর'},{name:'কলারোয়া বাজার',price:76,area:'কলারোয়া'}]},
+ {id:'2',slug:'swarnamashi-chal',name:'স্বর্ণমাছি চাল',category:'chal',categoryName:'চাল',unit:'প্রতি কেজি',price:68,change:1.4,emoji:'🌾',description:'দৈনন্দিন রান্নার চালের সর্বশেষ সম্ভাব্য খুচরা দর।',markets:[{name:'সাতক্ষীরা বড় বাজার',price:68,area:'সাতক্ষীরা'},{name:'শ্যামনগর বাজার',price:70,area:'শ্যামনগর'}]},
+ {id:'3',slug:'alu',name:'আলু',category:'sobji',categoryName:'সবজি',unit:'প্রতি কেজি',price:35,change:-3.2,emoji:'🥔',description:'দেশি আলুর বাজারদর—বাজারভেদে দাম আলাদা হতে পারে।',markets:[{name:'সাতক্ষীরা বড় বাজার',price:35,area:'সাতক্ষীরা'},{name:'তালা বাজার',price:32,area:'তালা'},{name:'কলারোয়া বাজার',price:36,area:'কলারোয়া'}]},
+ {id:'4',slug:'peyaj',name:'পেঁয়াজ',category:'sobji',categoryName:'সবজি',unit:'প্রতি কেজি',price:65,change:-2.9,emoji:'🧅',description:'দেশি পেঁয়াজের আজকের আনুমানিক খুচরা মূল্য।',markets:[{name:'সাতক্ষীরা বড় বাজার',price:65,area:'সাতক্ষীরা'},{name:'শ্যামনগর বাজার',price:70,area:'শ্যামনগর'}]},
+ {id:'5',slug:'rosun',name:'রসুন',category:'moshla',categoryName:'মসলা',unit:'প্রতি কেজি',price:180,change:4.5,emoji:'🧄',description:'রসুনের বর্তমান বাজারদর ও বাজারভিত্তিক তুলনা।',markets:[{name:'সাতক্ষীরা বড় বাজার',price:180,area:'সাতক্ষীরা'},{name:'তালা বাজার',price:190,area:'তালা'}]},
+ {id:'6',slug:'morich',name:'কাঁচা মরিচ',category:'sobji',categoryName:'সবজি',unit:'প্রতি কেজি',price:120,change:6.8,emoji:'🌶️',description:'কাঁচা মরিচের বাজারদর সরবরাহ ও চাহিদার সঙ্গে পরিবর্তিত হয়।',markets:[{name:'সাতক্ষীরা বড় বাজার',price:120,area:'সাতক্ষীরা'},{name:'কলারোয়া বাজার',price:110,area:'কলারোয়া'}]},
+ {id:'7',slug:'ilish',name:'ইলিশ মাছ',category:'mach',categoryName:'মাছ',unit:'প্রতি কেজি',price:1250,change:0,emoji:'🐟',description:'ইলিশ মাছের আনুমানিক দাম; আকার ও মান অনুযায়ী ভিন্ন হতে পারে।',markets:[{name:'সাতক্ষীরা বড় বাজার',price:1250,area:'সাতক্ষীরা'},{name:'শ্যামনগর বাজার',price:1380,area:'শ্যামনগর'}]},
+ {id:'8',slug:'dim',name:'ডিম',category:'mach-mangsho',categoryName:'মাছ-মাংস',unit:'প্রতি ডজন',price:145,change:-1.2,emoji:'🥚',description:'ফার্মের মুরগির ডিমের ডজনপ্রতি সম্ভাব্য দাম।',markets:[{name:'সাতক্ষীরা বড় বাজার',price:145,area:'সাতক্ষীরা'},{name:'তালা বাজার',price:150,area:'তালা'}]},
+ {id:'9',slug:'soyabin-tel',name:'সয়াবিন তেল',category:'tel',categoryName:'তেল',unit:'প্রতি লিটার',price:170,change:0.7,emoji:'🫙',description:'বোতলজাত সয়াবিন তেলের প্রতি লিটারের সম্ভাব্য মূল্য।',markets:[{name:'সাতক্ষীরা বড় বাজার',price:170,area:'সাতক্ষীরা'},{name:'শ্যামনগর বাজার',price:175,area:'শ্যামনগর'}]},
+ {id:'10',slug:'murgi',name:'ব্রয়লার মুরগি',category:'mach-mangsho',categoryName:'মাছ-মাংস',unit:'প্রতি কেজি',price:190,change:-2.1,emoji:'🍗',description:'ব্রয়লার মুরগির প্রতি কেজির আনুমানিক খুচরা দাম।',markets:[{name:'সাতক্ষীরা বড় বাজার',price:190,area:'সাতক্ষীরা'},{name:'কলারোয়া বাজার',price:185,area:'কলারোয়া'}]},
+ {id:'11',slug:'mosur-dal',name:'মসুর ডাল',category:'dal',categoryName:'ডাল',unit:'প্রতি কেজি',price:130,change:1.8,emoji:'🫘',description:'মসুর ডালের আজকের সম্ভাব্য বাজারদর।',markets:[{name:'সাতক্ষীরা বড় বাজার',price:130,area:'সাতক্ষীরা'},{name:'তালা বাজার',price:128,area:'তালা'}]},
+ {id:'12',slug:'ada',name:'আদা',category:'moshla',categoryName:'মসলা',unit:'প্রতি কেজি',price:220,change:3.1,emoji:'🫚',description:'আদার প্রতি কেজির সম্ভাব্য বাজারদর।',markets:[{name:'সাতক্ষীরা বড় বাজার',price:220,area:'সাতক্ষীরা'},{name:'শ্যামনগর বাজার',price:230,area:'শ্যামনগর'}]}
+];
+export const categories = [{slug:'chal',name:'চাল',emoji:'🍚'},{slug:'sobji',name:'সবজি',emoji:'🥬'},{slug:'moshla',name:'মসলা',emoji:'🌶️'},{slug:'mach',name:'মাছ',emoji:'🐟'},{slug:'mach-mangsho',name:'মাছ-মাংস',emoji:'🍗'},{slug:'tel',name:'তেল',emoji:'🫙'},{slug:'dal',name:'ডাল',emoji:'🫘'}];
+const num = (v: unknown): number => typeof v === 'number' ? v : Number(String(v ?? '0').replace(/[০-৯]/g, d => String('০১২৩৪৫৬৭৮৯'.indexOf(d))).replace(/[^\d.-]/g,'')) || 0;
+const first = (obj: any, keys: string[], fallback: any) => { for (const k of keys) if (obj?.[k] !== undefined && obj?.[k] !== null) return obj[k]; return fallback; };
+export function normalizeProduct(raw: any, i = 0): Product {
+ const name = String(first(raw,['name','productName','title','bn_name'],`পণ্য ${i+1}`));
+ const category = String(first(raw,['category','categorySlug','category_slug'],'sobji')).toLowerCase();
+ const categoryName = String(first(raw,['categoryName','category_name'],'পণ্য'));
+ const price = num(first(raw,['price','currentPrice','current_price','todayPrice','averagePrice'],0));
+ const change = num(first(raw,['change','changePercent','change_percentage','percentageChange'],0));
+ const slug = String(first(raw,['slug','id','_id'],name)).toLowerCase().replace(/[^a-z0-9\u0980-\u09ff]+/g,'-');
+ return {id:String(first(raw,['id','_id'],i+1)),slug,name,category,categoryName,unit:String(first(raw,['unit','unitName'],'প্রতি কেজি')),price,change,emoji:String(first(raw,['emoji','icon'],emojiFor(name))),description:String(first(raw,['description','summary'],'আজকের সম্ভাব্য বাজারদর ও বাজারভিত্তিক মূল্য তুলনা।')),markets:Array.isArray(raw?.markets)?raw.markets.map((m:any)=>({name:String(m.name||m.bazar||'স্থানীয় বাজার'),price:num(m.price),area:String(m.area||'বাংলাদেশ')})):[{name:'সাতক্ষীরা বড় বাজার',price,area:'সাতক্ষীরা'},{name:'স্থানীয় বাজার',price:Math.round(price*1.04),area:'বাংলাদেশ'}]};
+}
+export function emojiFor(name:string){return /চাল/.test(name)?'🍚':/আলু/.test(name)?'🥔':/পেঁয়াজ|পেঁয়াজ/.test(name)?'🧅':/মরিচ/.test(name)?'🌶️':/মাছ/.test(name)?'🐟':/ডিম/.test(name)?'🥚':/মুরগি/.test(name)?'🍗':/তেল/.test(name)?'🫙':/ডাল/.test(name)?'🫘':/রসুন/.test(name)?'🧄':/আদা/.test(name)?'🫚':'🥬'}
+export function taka(n:number){return `${Math.round(n).toLocaleString('bn-BD')} টাকা`}
+export async function getProducts(): Promise<Product[]> {
+ const bases=['https://openapi.programming-hero.com/api/bazardor','https://api.api-store.workers.dev/api/bazardor','https://api.abcz.workers.dev/api/bazardor'];
+ for(const base of bases){try{const r=await fetch(`${base}/products`,{next:{revalidate:300},signal:AbortSignal.timeout(4500)});if(!r.ok)continue;const json=await r.json();const data=Array.isArray(json)?json:json.data?.products||json.data?.data||json.data||json.products;if(Array.isArray(data)&&data.length)return data.map(normalizeProduct)}catch{}}
+ return fallbackProducts;
+}
